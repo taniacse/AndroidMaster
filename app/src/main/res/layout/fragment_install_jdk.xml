@@ -1,0 +1,170 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tania.androidmaster.main.fragment.FragmentInstallJDK">
+
+    <!-- TODO: Update blank fragment layout -->
+  <LinearLayout
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+
+      <TextView
+          android:layout_marginTop="10dp"
+          android:layout_marginLeft="10dp"
+          android:textColor="@color/colorPrimary"
+          android:gravity="left"
+          android:textSize="20sp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="Install Oracle Java Development Kit (JDK)"/>
+
+
+      <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:textSize="18sp"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:layout_marginLeft="10dp"
+          android:text="Since Android apps are written in Java, you will need the Oracle Java compiler and libraries on your system. These are collectively called the Java Development Kit or JDK for short. (If you are certain that you already have JDK 1.8 or higher on your computer, such as from taking CS 106A, you can skip to Step 2.) Download the JDK from the following address:"
+          />
+
+
+      <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:textSize="18sp"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:layout_marginLeft="10dp"
+          android:text=" > http://www.oracle.com/technetwork/java/javase/downloads/index.html"
+          />
+
+      <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:textSize="18sp"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:layout_marginLeft="10dp"
+          android:text="Go to the page and click the DOWNLOAD link for the JDK. (Be careful to choose JDK and not JRE.) Click the radio button to accept the License Agreement, then download the appropriate JDK for your operating system. For example, on Windows, click to download the Windows x86 installer."
+          />
+
+        <ImageView
+            android:src="@drawable/install_jdk_step_one"
+            android:layout_width="350dp"
+            android:layout_height="300dp" />
+
+      <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:textSize="18sp"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:layout_marginLeft="10dp"
+          android:text="Click the “Download” button beneath “JDK.” This will open a new page containing several download options.[1]"
+          />
+
+      <ImageView
+          android:src="@drawable/install_jdk_step_two"
+          android:layout_width="350dp"
+          android:layout_height="300dp" />
+
+      <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:textSize="18sp"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:layout_marginLeft="10dp"
+          android:text="Scroll to the latest version of Java SE Development Kit. You should always use the latest stable version of the toolkit. There may be more than one version listed, so look closely at the release number.[2]"
+          />
+
+      <ImageView
+          android:src="@drawable/install_jdk_step_three"
+          android:layout_width="350dp"
+          android:layout_height="300dp" />
+
+      <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:textSize="18sp"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:layout_marginLeft="10dp"
+          android:text="Click “Accept License Agreement.” Before you can click the download link, you must accept the license agreement. The option is just beneath the JDK version number."
+          />
+
+
+      <ImageView
+          android:src="@drawable/install_jdk_step_four"
+          android:layout_width="350dp"
+          android:layout_height="300dp" />
+
+      <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:textSize="18sp"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:layout_marginLeft="10dp"
+          android:text="Click the download link next to your operating system. Once you click the link, follow the prompts to select a save location on your computer and start the download."
+          />
+
+      <ImageView
+          android:src="@drawable/install_jdk_step_five"
+          android:layout_width="350dp"
+          android:layout_height="300dp" />
+
+      <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:textSize="18sp"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:layout_marginLeft="10dp"
+          android:text="Install the JDK on your computer."
+          />
+
+
+      <TextView
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:textSize="18sp"
+          android:layout_marginTop="10dp"
+          android:textColor="#000000"
+          android:layout_marginLeft="10dp"
+          android:text="(A common mistake here is to accidentally download the Java Runtime Environment, or JRE, instead of JDK. The JRE is not the right download; JRE enables you to run Java programs but not compile or develop your own. Be careful to download JDK and not JRE.)Once the JDK installer is done downloading, run it to install JDK on your system. You can use all of the default settings."
+          />
+
+      <LinearLayout
+          android:paddingBottom="10dp"
+          android:gravity="bottom"
+          android:layout_gravity="bottom"
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <Button
+              android:layout_gravity="bottom"
+              android:id="@+id/buttonBack"
+              android:layout_marginRight="10dp"
+              android:textAllCaps="false"
+              android:text="Back"
+              android:layout_width="150dp"
+              android:layout_height="wrap_content" />
+
+          <Button
+              android:id="@+id/buttonNext"
+              android:text="next"
+              android:layout_width="150dp"
+              android:layout_height="wrap_content" />
+
+      </LinearLayout>
+
+  </LinearLayout>
+
+</ScrollView>

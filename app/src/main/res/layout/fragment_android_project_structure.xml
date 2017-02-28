@@ -1,0 +1,276 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tania.androidmaster.main.fragment.FragmentAndroidProjectStructure">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Project Structure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+
+                android:textSize="18sp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Each project in Android Studio contains one or more modules with source code files and resource files. Types of modules include:"
+                android:textColor="#000000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="> Android app modules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="> Library modules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="> Google App Engine modules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="By default, Android Studio displays your project files in the Android project view, as shown in figure 1. This view is organized by modules to provide quick access to your project's key source files."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+
+                android:layout_marginTop="10dp"
+                android:src="@drawable/project_structure_view"
+                android:layout_width="wrap_content"
+                android:layout_height="400dp" />
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="All the build files are visible at the top level under Gradle Scripts and each app module contains the following folders:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="Figure 1. The project files in Android view."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text=" > manifests: Contains the Android -Manifest.xml file."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text=" > java: Contains the Java source code files, including JUnit test code."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text=" > res: Contains all non-code resources, such as XML layouts, UI strings, and bitmap images."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text=" The Android project structure on disk differs from this flattened representation. To see the actual file structure of the project, select Project from the Project dropdown "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text=" You can also customize the view of the project files to focus on specific aspects of your app development. For example, selecting the Problems view of your project displays links to the source files containing any recognized coding and syntax errors, such as a missing XML element closing tag in a layout file."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/custom_project_view"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="Figure 2. The project files in Problems view, showing a layout file with a problem."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/colorPrimary"
+                android:text="User InterFace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text=" The Android Studio main window is made up of several logical areas identified in figure 3."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+                android:id="@+id/ImageViewMainWindow"
+                android:src="@drawable/main_window_project_structure"
+                android:layout_width="300dp"
+                android:layout_height="300dp" />
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="Figure 3. The Android Studio main window."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text=" 1.The toolbar lets you carry out a wide range of actions, including running your app and launching Android tools."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="2. The navigation bar helps you navigate through your project and open files for editing. It provides a more compact view of the structure visible in the Project window."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="3. The editor window is where you create and modify code. Depending on the current file type, the editor can change. For example, when viewing a layout file, the editor displays the Layout Editor."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="4 .The tool window bar runs around the outside of the IDE window and contains the buttons that allow you to expand or collapse individual tool windows."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="5. The tool windows give you access to specific tasks like project management, search, version control, and more. You can expand them and collapse them."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="6. The status bar displays the status of your project and the IDE itself, as well as any warnings or messages."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="You can organize the main window to give yourself more screen space by hiding or moving toolbars and tool windows. You can also use keyboard shortcuts to access most IDE features."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginBottom="10dp"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:text="At any time, you can search across your source code, databases, actions, elements of the user interface, and so on, by double-pressing the Shift key, or clicking the magnifying glass in the upper right-hand corner of the Android Studio window. This can be very useful if, for example, you are trying to locate a particular IDE action that you have forgotten how to trigger."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,40 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.tania.androidmaster.main.fragment.TabLayoutFragment">
+
+    <LinearLayout
+
+        android:id="@+id/linearLayoutViewPager"
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.TabLayout
+            android:background="#f1f3f7"
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:tabSelectedTextColor="@color/colorPrimary"
+            app:tabIndicatorColor="@color/colorPrimary"
+            app:tabIndicatorHeight="5dp"
+            app:tabTextAppearance="@style/MineCustomTabText"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:layout_below="@id/tab_layout"
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="370dp"
+
+            />
+
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

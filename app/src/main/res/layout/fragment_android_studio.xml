@@ -1,0 +1,163 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tania.androidmaster.main.fragment.FragmentAndroidStudio">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Meet Android Studio" />
+
+
+            <TextView
+                android:textColor="#000000"
+                android:layout_marginLeft="10dp"
+                android:textSize="18sp"
+                android:text=" Android Studio is the official Integrated Development Environment (IDE) for Android app development, based on IntelliJ IDEA . On top of IntelliJ's powerful code editor and developer tools, Android Studio offers even more features that enhance your productivity when building Android apps, such as:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+               android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text=" > A flexible Gradle-based build system"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text=" > A fast and feature-rich emulator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text=" > A unified environment where you can develop for all Android devices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text=" > Instant Run to push changes to your running app without building a new APK "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text=" > Code templates and GitHub integration to help you build common app features and import sample code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text=" > Extensive testing tools and frameworks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text=" > Lint tools to catch performance, usability, version compatibility, and other problems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text=" > C++ and NDK support "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="18sp"
+                android:textColor="#000000"
+                android:text=" > Built-in support for Google Cloud Platform, making it easy to integrate Google Cloud Messaging and App Engine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:paddingBottom="10dp"
+            android:gravity="bottom"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+               android:layout_gravity="bottom"
+                android:id="@+id/buttonBack"
+                android:layout_marginRight="10dp"
+                android:textAllCaps="false"
+                android:text="Back"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonNext"
+                android:text="next"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>
+

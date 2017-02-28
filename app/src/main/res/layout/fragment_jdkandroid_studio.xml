@@ -1,0 +1,100 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tania.androidmaster.main.fragment.FragmentJDKAndroidStudio">
+
+   <LinearLayout
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <TextView
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:textSize="18sp"
+           android:layout_marginTop="10dp"
+           android:textColor="#000000"
+           android:layout_marginLeft="10dp"
+           android:text="Before you can create and modify Java programs, you’ll need the Java Software Development Kit.In order to develop Android apps, you will need to install two things: JDK and Android Studio SDK."
+           />
+
+       <TextView
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:textColor="@color/colorPrimary"
+           android:id="@+id/textView"
+           android:gravity="left"
+           android:textSize="20sp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text=" JDK (Java Dvelopment Kit) "/>
+
+       <TextView
+           android:layout_marginRight="5dp"
+           android:layout_marginTop="5dp"
+           android:textColor="#000000"
+           android:textSize="18sp"
+           android:layout_marginLeft="10dp"
+           android:text="Java Development Kit (JDK), officially named (Java Platform Standard Edition (Java SE)), which is freely available from Sun Microsystems (now part of Oracle), is needed for writing Java programs. The mother site for JDK (Java SE) is http://www.oracle.com/technetwork/java/index.html."
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+
+       <TextView
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:textColor="@color/colorPrimary"
+           android:gravity="left"
+           android:textSize="20sp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text=" JDK or JRE "/>
+
+       <TextView
+           android:layout_height="wrap_content"
+           android:layout_width="wrap_content"
+           android:textSize="18sp"
+           android:layout_marginTop="10dp"
+           android:textColor="#000000"
+           android:layout_marginLeft="10dp"
+           android:text="JRE (Java Runtime) is needed for running Java programs. JDK (Java Development Kit), which includes JRE plus the development tools (such as compiler and debugger), is need for writing as well as running Java programs. In other words, JRE is a subset of JDK. Since you are supposed to write Java Programs, you should install JDK, which includes JRE."
+           />
+
+       <TextView
+           android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:textColor="@color/colorPrimary"
+           android:gravity="left"
+           android:textSize="20sp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="What is Android Studio "/>
+
+       <LinearLayout
+           android:paddingBottom="10dp"
+           android:gravity="bottom"
+           android:layout_gravity="bottom"
+           android:orientation="horizontal"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+           <Button
+               android:layout_gravity="bottom"
+               android:id="@+id/buttonBack"
+               android:layout_marginRight="10dp"
+               android:textAllCaps="false"
+               android:text="Back"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content" />
+
+           <Button
+               android:id="@+id/buttonNext"
+               android:text="next"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content" />
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+</ScrollView>
