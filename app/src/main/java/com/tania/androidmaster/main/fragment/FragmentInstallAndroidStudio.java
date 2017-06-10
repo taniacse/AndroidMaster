@@ -4,11 +4,14 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.tania.androidmaster.R;
+import com.tania.androidmaster.main.main.MainActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -28,6 +31,9 @@ public class FragmentInstallAndroidStudio extends Fragment {
     private String mParam1;
     private String mParam2;
 
+    Button backButton;
+    Button nextButton;
+    FragmentManager fragmentManager;
     private OnFragmentInteractionListener mListener;
 
     public FragmentInstallAndroidStudio() {
@@ -65,7 +71,7 @@ public class FragmentInstallAndroidStudio extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View view = inflater.inflate(R.layout.fragment_install_android_studio, container, false);
+        View inflaterView = inflater.inflate(R.layout.fragment_install_android_studio, container, false);
 
 
         backButton = (Button) inflaterView.findViewById(R.id.buttonBack);
@@ -73,7 +79,7 @@ public class FragmentInstallAndroidStudio extends Fragment {
         fragmentManager = getActivity().getSupportFragmentManager();
 
         MainActivity.iconBackArrow.setVisibility(View.VISIBLE);
-        MainActivity.toolbarTextView.setText("install SDK");
+        MainActivity.toolbarTextView.setText("install Android Studio");
 
         MainActivity.iconBackArrow.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -102,8 +108,8 @@ public class FragmentInstallAndroidStudio extends Fragment {
             @Override
             public void onClick(View view) {
 
-                FragmentInstallAndroidStudio fragmentInstallAndroidStudio = new FragmentInstallAndroidStudio();
-                fragmentManager.beginTransaction().replace(R.id.container_body, fragmentInstallAndroidStudio).commit();
+                FragmentRunningAndroidStudio fragmentRunningAndroidStudio = new FragmentRunningAndroidStudio();
+                fragmentManager.beginTransaction().replace(R.id.container_body, fragmentRunningAndroidStudio).commit();
 
             }
         });
@@ -111,7 +117,7 @@ public class FragmentInstallAndroidStudio extends Fragment {
 
 
 
-        return view;
+        return inflaterView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event

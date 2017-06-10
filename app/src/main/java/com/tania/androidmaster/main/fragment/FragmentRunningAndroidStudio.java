@@ -4,11 +4,14 @@ import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.tania.androidmaster.R;
+import com.tania.androidmaster.main.main.MainActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,6 +32,10 @@ public class FragmentRunningAndroidStudio extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+
+    Button backButton;
+    Button nextButton;
+    FragmentManager fragmentManager;
 
     public FragmentRunningAndroidStudio() {
         // Required empty public constructor
@@ -64,8 +71,53 @@ public class FragmentRunningAndroidStudio extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_running_android_studio, container, false);
+
+        View inflaterView = inflater.inflate(R.layout.fragment_running_android_studio, container, false);
+
+
+
+//        backButton = (Button) inflaterView.findViewById(R.id.buttonBack);
+//        nextButton = (Button) inflaterView.findViewById(R.id.buttonNext);
+        fragmentManager = getActivity().getSupportFragmentManager();
+
+        MainActivity.iconBackArrow.setVisibility(View.VISIBLE);
+        MainActivity.toolbarTextView.setText("install Android Studio");
+
+        MainActivity.iconBackArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                MainActivity.toolbarTextView.setText("What is JDK");
+                FragmentInstallAndroidStudio fragmentInstallAndroidStudio = new FragmentInstallAndroidStudio();
+                fragmentManager.beginTransaction().replace(R.id.container_body, fragmentInstallAndroidStudio).commit();
+
+            }
+        });
+
+//        backButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                MainActivity.toolbarTextView.setText("What is JDK");
+//                FragmentJDKAndroidStudio fragmentJDKAndroidStudio = new FragmentJDKAndroidStudio();
+//                fragmentManager.beginTransaction().replace(R.id.container_body, fragmentJDKAndroidStudio).commit();
+//
+//
+//            }
+//        });
+//
+//        nextButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//
+//                FragmentInstallAndroidStudio fragmentInstallAndroidStudio = new FragmentInstallAndroidStudio();
+//                fragmentManager.beginTransaction().replace(R.id.container_body, fragmentInstallAndroidStudio).commit();
+//
+//            }
+//        });
+
+
+        return inflaterView;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -75,22 +127,22 @@ public class FragmentRunningAndroidStudio extends Fragment {
         }
     }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
+//    @Override
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+//        if (context instanceof OnFragmentInteractionListener) {
+//            mListener = (OnFragmentInteractionListener) context;
+//        } else {
+//            throw new RuntimeException(context.toString()
+//                    + " must implement OnFragmentInteractionListener");
+//        }
+//    }
+//
+//    @Override
+//    public void onDetach() {
+//        super.onDetach();
+//        mListener = null;
+//    }
 
     /**
      * This interface must be implemented by activities that contain this
