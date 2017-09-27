@@ -1,9 +1,124 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.tania.androidmaster.main.fragment.FragmentConfigureEmulatorStepOne">
 
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:textSize="@dimen/heading_text_size"
+            android:padding="@dimen/emulator_heading_padding"
+            android:textColor="@color/colorPrimary"
+            android:text="What is an emulator ?"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/emulator_explanation_padding"
+            android:text="The Android Emulator simulates a device and displays it on your development computer. It lets you prototype, develop, and test Android apps without using a hardware device. The emulator supports Android phone, tablet, Android Wear, and Android TV devices. It comes with predefined device types so you can get started quickly, and you can create your own device definitions and emulator skins."
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/explanation_text_size" />
 
 
-</FrameLayout>
+        <TextView
+            android:textSize="@dimen/heading_text_size"
+            android:padding="@dimen/emulator_heading_padding"
+            android:textColor="@color/colorPrimary"
+            android:text="Installing Android Emulator :"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/explanation_text_size"
+            android:padding="@dimen/emulator_explanation_padding"
+            android:text="When installing Android Studio has an option to install the virtual simulation device (Android Virtual Device or also known as Android Emulator), in case you did not install it, you can install later."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:padding="@dimen/image_padding"
+            android:src="@drawable/first_image"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height" />
+
+        <TextView
+            android:text="In Android Studio select:
+                Tools/Android/AVD Manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:padding="@dimen/image_padding"
+            android:src="@drawable/second_image"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height" />
+        <ImageView
+            android:padding="@dimen/image_padding"
+            android:src="@drawable/third_image"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height" />
+        <ImageView
+            android:padding="@dimen/image_padding"
+            android:src="@drawable/fourth_image"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height" />
+        <ImageView
+            android:padding="@dimen/image_padding"
+            android:src="@drawable/fifth_image"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height" />
+
+        <ImageView
+            android:padding="@dimen/image_padding"
+            android:src="@drawable/sixth_image"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height" />
+        <ImageView
+            android:padding="@dimen/image_padding"
+            android:src="@drawable/seventh_image"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height" />
+        <ImageView
+            android:padding="@dimen/image_padding"
+            android:src="@drawable/eighth_image"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height" />
+        <ImageView
+            android:padding="@dimen/image_padding"
+            android:src="@drawable/ninth_image"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height" />
+        <ImageView
+            android:padding="@dimen/image_padding"
+            android:src="@drawable/tenth_image"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height" />
+        <ImageView
+            android:padding="@dimen/image_padding"
+            android:src="@drawable/eleventh_image"
+            android:layout_width="@dimen/image_width"
+            android:layout_height="@dimen/image_height" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_marginBottom="@dimen/button_top_margin"
+            android:layout_marginTop="@dimen/button_top_margin"
+            android:layout_gravity="center"
+            android:text="next"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+
+</ScrollView>

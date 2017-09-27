@@ -1,6 +1,5 @@
 package com.tania.androidmaster.main.fragment;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -13,12 +12,12 @@ import com.tania.androidmaster.R;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link fraggment_build_first_app.OnFragmentInteractionListener} interface
+ * {@link FragmentBuildFirstApp.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link fraggment_build_first_app#newInstance} factory method to
+ * Use the {@link FragmentBuildFirstApp#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class fraggment_build_first_app extends Fragment {
+public class FragmentBuildFirstApp extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -30,7 +29,7 @@ public class fraggment_build_first_app extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public fraggment_build_first_app() {
+    public FragmentBuildFirstApp() {
         // Required empty public constructor
     }
 
@@ -40,11 +39,11 @@ public class fraggment_build_first_app extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment fraggment_build_first_app.
+     * @return A new instance of fragment FragmentBuildFirstApp.
      */
     // TODO: Rename and change types and number of parameters
-    public static fraggment_build_first_app newInstance(String param1, String param2) {
-        fraggment_build_first_app fragment = new fraggment_build_first_app();
+    public static FragmentBuildFirstApp newInstance(String param1, String param2) {
+        FragmentBuildFirstApp fragment = new FragmentBuildFirstApp();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -75,22 +74,22 @@ public class fraggment_build_first_app extends Fragment {
         }
     }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
+//    @Override
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+//        if (context instanceof OnFragmentInteractionListener) {
+//            mListener = (OnFragmentInteractionListener) context;
+//        } else {
+//            throw new RuntimeException(context.toString()
+//                    + " must implement OnFragmentInteractionListener");
+//        }
+//    }
+//
+//    @Override
+//    public void onDetach() {
+//        super.onDetach();
+//        mListener = null;
+//    }
 
     /**
      * This interface must be implemented by activities that contain this

@@ -120,7 +120,16 @@ public class BasicFragment extends Fragment {
 
                 }else if (position == 2){
 
+                    FragmentConfigureEmulatorStepOne fragmentConfigureEmulatorStepOne = new FragmentConfigureEmulatorStepOne();
+                    fragmentManager.beginTransaction().replace(R.id.container_body, fragmentConfigureEmulatorStepOne).commit();
+
+
+
                 }else if (position == 3){
+
+                    FragmentBuildFirstApp fragmentBuildFirstApp = new FragmentBuildFirstApp();
+                    fragmentManager.beginTransaction().replace(R.id.container_body, fragmentBuildFirstApp).commit();
+
 
                 }else if (position == 4){
 

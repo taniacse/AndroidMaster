@@ -3,4 +3,13 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="emulator_heading_padding">16dp</dimen>
+    <dimen name="emulator_explanation_padding">10dp</dimen>
+    <dimen name="explanation_text_size">20dp</dimen>
+    <dimen name="heading_text_size">20dp</dimen>
+    <dimen name="button_width">150dp</dimen>
+    <dimen name="button_top_margin">20dp</dimen>
+    <dimen name="image_width">350dp</dimen>
+    <dimen name="image_height">300dp</dimen>
+    <dimen name="image_padding">20dp</dimen>
 </resources>

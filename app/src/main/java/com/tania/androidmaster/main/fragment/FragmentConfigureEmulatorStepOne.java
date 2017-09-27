@@ -1,14 +1,16 @@
 package com.tania.androidmaster.main.fragment;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.tania.androidmaster.R;
+import com.tania.androidmaster.main.main.MainActivity;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -29,6 +31,7 @@ public class FragmentConfigureEmulatorStepOne extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
+    FragmentManager fragmentManager;
 
     public FragmentConfigureEmulatorStepOne() {
         // Required empty public constructor
@@ -64,8 +67,48 @@ public class FragmentConfigureEmulatorStepOne extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragment_configure_emulator_step_one, container, false);
+
+        View view = inflater.inflate(R.layout.fragment_configure_emulator_step_one, container, false);
+
+        Button nextButton = (Button) view.findViewById(R.id.buttonNext);
+        MainActivity.iconBackArrow.setVisibility(View.VISIBLE);
+        MainActivity.toolbarTextView.setText("Configure Emulator");
+        fragmentManager = getActivity().getSupportFragmentManager();
+
+
+
+
+        MainActivity.iconBackArrow.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                MainActivity.toolbarTextView.setText("What is JDK");
+                FragmentJDKAndroidStudio fragmentJDKAndroidStudio = new FragmentJDKAndroidStudio();
+                fragmentManager.beginTransaction().replace(R.id.container_body, fragmentJDKAndroidStudio).commit();
+
+            }
+        });
+
+
+
+
+
+
+
+
+        nextButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+
+
+
+
+            }
+        });
+
+
+        return view;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -75,22 +118,22 @@ public class FragmentConfigureEmulatorStepOne extends Fragment {
         }
     }
 
-    @Override
-    public void onAttach(Context context) {
-        super.onAttach(context);
-        if (context instanceof OnFragmentInteractionListener) {
-            mListener = (OnFragmentInteractionListener) context;
-        } else {
-            throw new RuntimeException(context.toString()
-                    + " must implement OnFragmentInteractionListener");
-        }
-    }
-
-    @Override
-    public void onDetach() {
-        super.onDetach();
-        mListener = null;
-    }
+//    @Override
+//    public void onAttach(Context context) {
+//        super.onAttach(context);
+//        if (context instanceof OnFragmentInteractionListener) {
+//            mListener = (OnFragmentInteractionListener) context;
+//        } else {
+//            throw new RuntimeException(context.toString()
+//                    + " must implement OnFragmentInteractionListener");
+//        }
+//    }
+//
+//    @Override
+//    public void onDetach() {
+//        super.onDetach();
+//        mListener = null;
+//    }
 
     /**
      * This interface must be implemented by activities that contain this
